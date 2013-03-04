@@ -1,0 +1,350 @@
+% CSC 300: Professional Responsibilities
+% Dr. Clark Turner
+
+% Two Column Format
+\documentclass[11pt]{article}
+%this allows us to specify sections to be single or multi column so that things
+% like title page and table of contents are single column
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{breakcites}
+\usepackage{array}
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{letterpaper}
+
+\begin{document}
+
+\title{\vfill Reddit Blackout: An Ethical Protest of SOPA?}
+\author{
+Corey A. Farwell\vspace{10pt} \\
+CSC 300: Professional Responsibilities\vspace{10pt} \\
+Dr. Clark Turner\vspace{10pt} \\
+}
+\date{March 8, 2012}
+
+\maketitle
+
+\vfill  %in combination with \newpage this forces the abstract to the bottom of the page
+\begin{abstract}
+
+The United States House of Representatives is in the process of passing the Stop Online Piracy Act (SOPA), a bill designed to combat online copyright infringement.\cite{sopa} Reddit, the 50th most popular website in the United States, was one of 115,000 websites that participated in an online protest against these bills on January 18, 2012.\cite{nyt-sopa-protest} SOPA would require many websites, including Reddit, to filter their content, removing links to copyright infringing websites. If these websites don't comply, they are subject to being prosecuted and shut down.\cite{sopa}
+
+Was the social news website Reddit ethical in blacking out their website in protest of the Stop Online Piracy Act? Proponents of the bill argue that these protests were ``publicity stunts'' and the arguments presented by these sites were ``incomplete and misleading.''\cite{lamar-smith-publicity-stunt}\cite{chris-dodd-response} According the ACM Software Engineering Code of Ethics,\cite{se-code} Reddit was ethical in the protest in order to warn their users that their service could potentially shut down if SOPA were to pass.
+
+\end{abstract}
+
+\thispagestyle{empty} %remove page number from title page
+\newpage
+
+
+%Create a table of contents with all headings of level 3 and above.
+%http://en.wikibooks.org/wiki/LaTeX/Document_Structure#Table_of_contents has
+%info on customizing the table of contents
+\thispagestyle{empty}  %Remove page number from TOC
+\tableofcontents
+
+\newpage
+
+%end the 1 column format
+
+
+%start 2 column format
+\begin{multicols}{2}
+%Start numbering first page of content as page 1
+\setcounter{page}{1}
+
+%%%%%%%%%%%%%%%%%%%%
+%%% Known Facts  %%%
+%%%%%%%%%%%%%%%%%%%%
+
+   \section{Facts}
+
+   \subsection{Bills}
+
+There are two bills in the United States Congress right now, PIPA and SOPA, that aim to reduce online copyright infringement and the trade of counterfeit goods.\cite{pipa}\cite{sopa} These bills do not contain any provisions to actually remove specific copyright content, but rather focus on the censorship of links to entire domains.\cite{reddit-sopapipa-explaination} SOPA and PIPA both have bipartisan support.\cite{bipartisan}
+
+   \subsubsection{PIPA}
+
+In May 2011, a bill titled Preventing Real Online Threats to Economic Creativity and Theft of Intellectual Property Act (S.968, PROTECT IP Act, or PIPA) was introduced to the United States Senate by Vermont Senator Patrick Leahy.\cite{pipa} PIPA is a rewrite of a bill titled Combating Online Infringement and Counterfeits Act (COICA) that failed to pass in the Senate in 2010.\cite{coica}
+
+   \subsubsection{SOPA}
+
+In October 2011, Stop Online Privacy Act (H.R. 3261 or SOPA) was introduced in the United States House of Representatives by Texas Representative Lamar Smith.\cite{sopa} While some specific definitions differ, SOPA has identical goals to PIPA.\cite{sopa-vs-pipa}
+
+   \subsection{Reddit}
+
+Reddit, founded in 2005, is a social news website that allows users to share links to other websites.\cite{reddit-history} The website was purchased by magazine publisher Conde Nast in October 2005. In September 2011, Reddit was moved from Conde Nast to its parent company Advance Publications. As of February 2012, Reddit is the 50th most popular website in the United States and 118th most popular in the world.\cite{alexa-reddit}
+
+   \subsubsection{Subreddits}
+
+Reddit consists of over 6,500 active, independent communities called Subreddits.\cite{metareddit} These Subreddits have their own topics, members, and moderators. As described on their blog, Reddit defines Subreddits as
+
+\begin{quote}a class of online community, just like mailing lists, forums, and chatrooms are. Each of the thousands of Subreddits is a distinct community with its own purpose, standards, and readership.\cite{how-reddit-works}\end{quote}
+
+As an international site, Reddit is offered in 17 different languages and there are hundreds of active, foreign Subreddits.\cite{reddit-faqs-languages}\cite{reddit-directory-cities}
+
+   \subsection{White House response}
+
+Following the announcement of upcoming online protests and pressure from online petitions, the White House Administration released an official statement declaring their position on SOPA and PIPA. On January 14, 2012, Macon Phillips of the Obama Administration published a document on their website stating that ``we will not support legislation that reduces freedom of expression, increases cybersecurity risk, or undermines the dynamic, innovative global Internet.''\cite{white-house-sopa-pipa}
+
+   \subsection{Internet protests}
+
+On January 18th, Reddit, Wikipedia English, Craigslist, Internet Archive, and thousands of other websites blacked out their websites and put up information condemning SOPA and PIPA.\cite{sopa-strike-participants} Reddit was one of the first sites to commit to this online protest.\cite{nytimes-public-outcry} Reddit's specific blackout page had resources that allowed visitors to make calls to their Congresspeople, sign online petitions, and learn more about the bills.\cite{reddit-blackout-site} Many other sites like Google, Wired, and Flickr put a black banner over their logos but kept their main content and functionality available. Clicking on the modified logos would bring up information condemning SOPA and PIPA.\cite{blackout-logos}
+
+   \subsubsection{Effects of the protests}
+
+By the end of the online protests, 4.5 million people signed a petition condemning both bills.\cite{protest-success} Additionally on January 18th, 18 Senators announced they would no longer support PIPA and 70 members of the House of Representatives announced their opposition to SOPA.\cite{senators-change-position}\cite{sopa-pipa-positions}
+
+   \subsection{Current status of the bills}
+
+On January 20th, as a result of the online protests and the White House condemning the bills, Senate Majority Harry Reid announced that ``in light of recent events'' the voting on PIPA was to be put on hold ``until there is a wider agreement on a solution.''\cite{delay-pipa}\cite{cnn-money-bills-postponed}\cite{delay-both} Within hours after this announcement, Representative Lamar Smith announced that he would be suspending SOPA and that ``we need to revisit the approach on how to address the problem of foreign thieves that steal and sell American inventions and products.''\cite{delay-sopa}\cite{delay-both}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Research Question %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+   \section{Research Question}
+
+Was the social news website Reddit ethical in blacking out their website in protest of the Stop Online Piracy Act?
+
+   \subsection{Why is this important?}
+
+With a passionate community and 21.5 million unique monthly visitors,\cite{how-reddit-works} the Reddit blackout educated many people and potentially changed the positions of Congresspeople PIPA through petitions linked from Reddit's blackout page. As a result of the online protests, many mass media companies reported the protests, and the bills gained further publicity and scrutiny.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Extant Arguments from External Sources %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+   \section{Arguments In Favor}
+
+\emph{Reddit acted ethically in blacking out their site in protest of the Stop Online Piracy Act.}
+
+   \subsection{SOPA poses a threat to Reddit}
+
+Reddit has taken a firm stance against both SOPA and PIPA, stating that both bills pose a ``serious threat to Reddit and the Internet as we know it.''\cite{reddit-blackout-blog} According to Reddit's blog, 
+
+\begin{quote}The freedom, innovation, and economic opportunity that the Internet enables is in jeopardy. Congress is considering legislation that will dramatically change your Internet experience and put an end to Reddit and many other sites you use everyday.\cite{reddit-blackout-blog}\end{quote}
+
+As a result of this stance, Reddit provided justification for their blackout later on in this blog post:
+
+\begin{quote}Many of you stand with us against PIPA/SOPA, but we know support for a blackout isn’t unanimous. We're not taking this action lightly. We wouldn’t do this if we didn’t believe this legislation and the forces behind it were a serious threat to Reddit and the Internet as we know it. Blacking out Reddit is a hard choice, but we feel focusing on a day of action is the best way we can amplify the voice of the community.\cite{reddit-blackout-blog}\end{quote}
+
+The admins of Reddit decided that a blackout would be a good way of increasing publicity and opposition to these bills.
+
+   \subsection{SOPA affects other internet companies}
+
+The majority of organizations opposing SOPA have investments with the internet and online communities. A joint letter was signed by eBay, Facebook, Google, Twitter and others condemning the legislation.\cite{mozilla-joint-letter} In this letter, these organizations ``support the bill's stated goals,'' but believe that SOPA is ``expose[ing] law-abiding U.S. Internet and technology companies to new uncertain liabilities, private rights of action, and technology mandates that would require monitoring of web sites.''\cite{mozilla-joint-letter} Many of these internet companies had some form of blackout on January 18th in protest of SOPA and PIPA.\cite{sopa-strike-participants}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+   \section{Arguments Against}
+
+\emph{Reddit acted unethically in blacking out their site in protest of the Stop Online Piracy Act.}
+
+   \subsection{Blackouts didn't present facts}
+
+   \subsubsection{Rep. Lamar Smith}
+
+Representative Lamar Smith, the author of SOPA,\cite{sopa} claimed that his bill ``will not harm Wikipedia, domestic blogs or social networking sites. This publicity stunt does a disservice to its users by promoting fear instead of facts.''\cite{lamar-smith-publicity-stunt}
+
+   \subsubsection{MPAA}
+
+Chris Dodd, Chairman and CEO of the Motion Picture of Association of America (MPAA), released an official statement calling the blackouts 
+
+\begin{quote}yet another gimmick, albeit a dangerous one, designed to punish elected and administration officials who are working diligently to protect American jobs from foreign criminals.\cite{chris-dodd-response}\end{quote}
+
+In the same document, he mentions that the protests were an ``abuse of power'' that turned their users into ``corporate pawns.''\cite{chris-dodd-response}
+
+   \subsubsection{RIAA}
+
+Cary Sherman, Chairman and CEO of the Record Industry Association of America (RIAA),\cite{riaa-ceo} claims
+
+\begin{quote}When Wikipedia and Google purport to be neutral sources of information, but then exploit their stature to present information that is not only not neutral but affirmatively incomplete and misleading, they are duping their users into accepting as truth what are merely self-serving political declarations.\cite{cary-sherman-response}\end{quote}
+
+%%%%%%%%%%%%%%%%
+%%% Analysis %%%
+%%%%%%%%%%%%%%%%
+
+   \section{Analysis}
+
+In order to analyze the ethics behind the research question, we need to agree on an ethical code to base our findings on. For this analysis, we will primarily use the ACM Software Engineering Code of Ethics.
+
+   \subsection{Application of the SE Code to the Reddit employees}
+
+The Software Engineering Code of Ethics and Professional Practice (SE Code of Ethics) is a document with a set of provisions that that contain ethical guidelines for ``professional software engineers.'' It was published by the Association for Computing Machinery (ACM) and the Institute of Electrical and Electronics Engineers Computer Society (IEEE-CS) in 1999.\cite{se-code} 
+
+In analyzing the ethical decisions made by the Reddit admins, we must first apply the SE Code of Ethics to these employees. According to Reddit's website, seven out of their eleven employees consider themselves consider themselves software developers or software engineers.\cite{reddit-faqs-jobs} In the Preamble of the SE Code of Ethics, it states that the Code applies to ``software engineers, including practitioners, educators, managers, supervisors and policy makers, as well as trainees and students of the profession.''\cite{se-code} Therefore, these employees (the admins of Reddit) are subject to the SE Code of Ethics because they fall under the definition described in the Preamble.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+   \subsection{SE Code of Ethics Tenet 6.12}
+
+\begin{framed}
+\noindent
+  \textbf{SE Code 6.12:}
+  \newline
+  Express concerns to \underline{the people involved} when significant violations of this Code are \underline{detected} unless this is impossible, counter-productive, or dangerous.\cite[6.12]{se-code}
+\end{framed}
+
+To help clarify this tenet, we will state a few definitions. In this code segment, ``the people involved'' is referring to the people who violated the SE Code of Ethics. We will define ``the people involved'' to be the House of Representatives since they are involved in the decision process of SOPA. If we can show that the House of Representatives violated the SE Code of Ethics, then Reddit would be ethical in expressing concerns to them. ``Detected'' is defined ``to uncover; to discover; to bring to light.''\cite{def-detected} In order to show that ``significant violations'' of the SE Code of Ethics ``detected,'' we must first apply the Code to the House of Representatives.
+
+   \subsection{Application of the SE Code to the House of Representatives}
+
+In analyzing the ethical decisions of SOPA, we also need to apply the SE Code of Ethics to the House of Representatives. As described under the Preamble, the SE Code of Ethics applies to ``software engineers, including practitioners, educators, managers, supervisors and policy makers, as well as trainees and students of the profession.''\cite{se-code} A policy maker is defined to be ``someone who sets the plan pursued by a government.''\cite{def-policy-maker} As representatives of the citizens of the United States that determine nationwide policies, and specifically these software related policies, the House of Representatives are policy makers and are subject to the SE Code of Ethics.
+
+Now that we have connected the SE Code of Ethics to the House of Representatives, if we can show they violated part of the Code, Reddit would be ethical in expressing concerns to them.
+
+   \subsubsection{Violation of SE Code 7.08 by the House of Representatives}
+
+
+\begin{framed}
+\noindent
+  \textbf{SE Code 7.08:}
+  \newline
+  In situations outside of their own areas of \underline{competence}, call upon the opinions of other \underline{professionals} who have \underline{competence} in that area.\cite[7.08]{se-code}
+\end{framed}
+
+To solidify this section of code we need to establish a couple definitions. The Oxford Dictionary defines `competence' to be `the ability to do something successfully or efficiently' and `professionals' to be `a person engaged or qualified in a profession.'\cite{def-competence}\cite{def-profession}
+
+On November 16, 2011, the House Judiciary Committee held a 12 hour long hearing hoping to clear up pending questions and vote for amendments for SOPA.\cite{sopa-hearings-atlantic} Along with many members of the House of Representatives present at the hearing, there was also a panel of private `experts' testifying. Below is a table of companies who testified at the hearing and the position the testifier holds at their company:\cite{sopa-hearing-primary}
+
+\begin{center}
+  \begin{tabular}{|m{2cm}|m{4.5cm}|}
+    \hline
+    Pfizer & Chief Security Officer and VP of Global Security \\ \hline
+    MPAA & Senior Executive Vice President \\ \hline
+    MasterCard & Head of Customer Performance Integrity \\ \hline
+    Google & Policy Counsel \\ \hline
+    AFL-CIO & Head of Dept. of Professional Employees \\ \hline
+  \end{tabular}
+\end{center}
+
+The hearing was focused around SOPA, a bill filled with technical definitions and topics, especially involving the Domain Name Service (DNS).\cite{sopa} Many individuals were concerned with the lack of professionals present at the hearing. California Representative Zoe Lofgren, who attended the hearing, said ``I don’t think this is a balanced story. We have no technical expertise on this panel today.''\cite{no-nerds-katy-bachman} House Subcommittee of Cybersecurity Chairman Dan Lungren stated, ``My position on the bill now is we don’t have enough information, and if this is a serious problem as was suggested by some of the technical experts that got in touch with me, we have to address it.''\cite{no-nerds-tony-romm} California Representative Darrell Issa added, ``First of all, we haven't heard from the scientists. We haven't done our due diligence.''\cite{sopa-hearings-atlantic} Many other Representatives called out in the hearing, asking where the ``nerds'' were.\cite{sopa-hearings-atlantic} Since these Representatives did not call upon the appropriate `professionals,' and the topics are out of their `competence,' they are in violation of SE Code Tenet 7.08.
+
+   \subsubsection{Expressing concerns}
+
+Since the House of Representatives (the people involved) was proven to be in violation of SE Code of Ethics Tenet 7.08, Reddit would be ethical in notifying the Representatives of their violation as stated in SE Code Tenet 6.12. During the blackout on January 18th, Reddit's homepage featured resources that allowed visitors to contact their congresspeople and sign petitions in order to raise awareness of issues presented in bills.\cite{reddit-blackout-site} Additionally, there were links to videos and articles covering the November 16th, 2011 SOPA hearings.\cite{reddit-blackout-site} By then end of the January 18th, over three million people emailed congress to voice their opposition to SOPA and PIPA\cite{nytimes-public-outcry}. Reddit used their blackout page as a means of expressing concern over SE Code of Ethics violations by the House of Representatives.
+
+   \subsubsection{Conclusion of Tenet 6.12}
+
+Since SE Code of Ethics Tenet 7.08 was violated by The House of Representatives for not providing professionals at the SOPA hearing, Reddit was ethical to respond in a blackout containing resources to contact their Congresspeople. As stated in Section 1.4.1, many Senators and Representatives changed their positions within 24 hours of the event, potentially from the pressure from citizens contacting them.\cite{sopa-pipa-positions}
+
+\vfill
+\columnbreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+   \subsection{SE Code of Ethics Tenet 2.06}
+
+\begin{framed}
+\noindent
+  \textbf{SE Code 2.06:}
+  \newline
+  Identify, document, collect evidence and report to the \underline{client or the employer} promptly if, in \underline{their} opinion, \underline{a project} is likely to fail, to prove too expensive, to violate intellectual property law, or otherwise to be problematic.\cite[2.06]{se-code}
+\end{framed}
+
+To help narrow down the scope of this tenet and connect it with the research question, we will make a few substitutions. The phrase ``client or the employer,'' can be replaced by Reddit's client: the users of their website. The ``their'' refers to the admins of Reddit, since they are the ones reporting to their users about a problematic project. The ``project'' can be substituted by the Reddit admins' project in question: Reddit. We can now rewrite tenet 2.06 to better represent the problem at hand:
+
+\begin{framed}
+\noindent
+  \textbf{SE Code 2.06 with substitutions:}
+  \newline
+  Identify, document, collect evidence and report to the users of Reddit promptly if, in the Reddit admins' opinion, Reddit is likely to \underline{fail}, to prove too expensive, to violate intellectual property law, or otherwise to be \underline{problematic}.\cite[2.06]{se-code}
+\end{framed}
+
+If we can show that the Reddit admins felt that Reddit would likely fail, prove too expensive, violate intellectual property law, \emph{or} be problematic, then by reporting the evidence to their users promptly, they will have acted ethically.
+
+By blacking out their site and putting up information condemning SOPA, Reddit was informing their clients (the users) about the impact both bills could put on Reddit. If we can prove that Reddit would likely fail or be problematic if SOPA were to pass, then we could say the admins at Reddit who oversaw the blackout were acting ethically. The Oxford Dictionary defines `fail' to be ``be unsuccessful in achieving one’s goal'' and `problematic' to be ``constituting or presenting a problem or difficulty.''\cite{def-fail}\cite{def-problematic}
+
+In order to see why Reddit will be impacted by SOPA, we must first understand the definition of an `Internet search engine' and what `Internet search engines' must comply with under SOPA if it were to pass.
+
+   \subsubsection{Search engine}
+
+According to the text of SOPA, an `Internet search engine' is defined to be
+
+\begin{quote}a service made available via the Internet that searches...information...and on the basis of a user query...returns to the user a means, such as a hyperlinked list of Uniform Resource Locators, of locating, viewing, or downloading such information or data available on the Internet relating to such query...\cite[101.16]{sopa}\end{quote}
+
+Reddit does not host user-generated content, but rather users submit links to other websites which the community votes on.\cite{reddit-help-voting} Reddit has a built in search engine that allows you to search through past and current `submissions' of external websites. Jason Harvey, Reddit's lead system admin,\cite{reddit-faqs-jobs} says that
+
+\begin{quote}The definition of a search engine in the legislation is very wordy. What it basically comes down to is a service that provides links to other sites based on a user query or selection. Sites like Reddit certainly fall within this definition.\cite{reddit-sopapipa-explaination}\end{quote}
+
+As Harvey states, he believes that under current definition, Reddit's built-in search qualifies as an `Internet search engine.' Under SOPA, search engines must follow specific restrictions if they link to ``foreign infringing sites'':
+
+\begin{quote}A provider of an Internet search engine shall take technically feasible and reasonable measures, as expeditiously as possible, but in any case within 5 days after being served with a copy of the order, or within such time as the court may order, designed to prevent the foreign infringing site that is subject to the order, or a portion of such site specified in the order, from being served as a direct hypertext link.\cite[102.c.2.B]{sopa}\end{quote}
+
+   \subsubsection{Foreign infringing site}
+
+ SOPA defines a ``foreign infringing site'' as any site that is ``committing or facilitating'' copyright infringement.\cite[102.a.2]{sopa} 
+
+Additionally, under the current definition of ``foreign infringing site,'' Reddit links to many of these sites.\cite{reddit-search-piratebay}
+
+This would require the Reddit admins to filter out suspected infringing links on their website. Erik Martin, General Manger of Reddit, responds
+
+\begin{quote}We get millions of page views a day, there's tens of thousands of people on the site at any given time. It is impossible to filter and police that kind of user generated content for all of these possible infringements.\cite{reddit-erik-interview}\end{quote}
+
+Martin believes that, due to their large internet traffic, it is ``impossible'' for the Reddit admins to filter ``foreign infringing sites'' from their content. The Oxford Dictionary defines `impossible' to be ``very difficult to deal with.''\cite{def-impossible} Martin has presented a `difficulty,' which is considered `problematic' by the definition defined in Section 5.4.
+
+In addition to the project proving to be problematic, we will look at how Reddit might fail if SOPA were to become law.
+
+   \subsubsection{User-run, free platform}
+
+In September 2011, the Reddit admins made a post on their blog clarifying how Reddit works and the principles behind the site.\cite{how-reddit-works} When talking about Subreddits, the communities powering the site, the admins described them saying, ``Subreddits are a free market. Anyone can create a Subreddit and decide how it is run.''\cite{how-reddit-works} To clarify when the admins of Reddit intervene with Subreddit moderators because of illegal content, the Reddit admins said, ``our prime directive is that we will not intervene unless something attacks the structural integrity of the greater Reddit community.''\cite{how-reddit-works} Later on they go on and give their reasoning:
+
+\begin{quote}``Admin and moderator intervention is wasteful because it's disruptive to both us and the community. It takes up time that can be spent building our communities further. We deeply respect the role moderators play in their communities, and we don't use admin ability to override that unless it is absolutely necessary.''\cite{how-reddit-works}\end{quote}
+
+As stated, the admins believe that any admin intervention in a Subreddit harms the community. As a result, Reddit becomes a user-run, decentralized platform full of independent communities. Jason Harvey said that the regulations SOPA and PIPA require ``damage one of the most important tenets of Reddit, and the internet as a whole - free and open discussion about whatever the f*** you want.''\cite{reddit-sopapipa-explaination}
+
+If SOPA were to become law, and since Reddit would be considered an `Internet search engine' that links to `foreign infringing sites,' Reddit would be under heavy regulation by content filtering, effectively destroying Reddit's open platform. Since Harvey believes that these bills ``damage'' one of Reddit's most important tenets (goals), this falls under the definition of `fail' defined in Section 5.4. He is then justified in reporting to the user of his findings.
+
+   \subsubsection{Reporting to the users}
+
+Since, in the Reddit admins' opinion, SOPA would likely cause Reddit to fail or make their project problematic, they would be ethical in identifying, documenting, collecting evidence and reporting to their users promptly.
+
+On January 10th, the admins of Reddit made a post on their blog announcing they would blackout their website on January 18th and display ``a simple message about how the PIPA/SOPA legislation would shut down sites like Reddit, link to resources to learn more, and suggest ways to take action.''\cite{reddit-blackout-blog} On the day before the blackout, January 17th, Jason Harvey submitted a blog post to the official Reddit blog titled ``A technical examination of SOPA and PROTECT IP.''\cite{reddit-sopapipa-explaination} In this post, Harvey summarizes the specific sections of SOPA and PIPA that directly affect Reddit and how some subtle differences between the two bills. Harvey finds this information so important, in the first paragraph of the post, he has in bold: ``I highly encourage you to set some time aside to read this thoroughly.''
+
+Since only a fraction of Reddit's users read their blog, their most effective way of reporting to the users was the blackout on January 18th, 2012. The blackout page presented links to Harvey's blog post from earlier among other resources.\cite{reddit-blackout-blog} 
+
+   \subsubsection{Conclusion of Tenet 2.06}
+
+Since Reddit is classified as an ``Internet search engine'' under SOPA, the regulations that would place on Reddit would be devastating and ultimately be the failure of the project. With a combination of the two blog posts and a blackout, Reddit informed their users about this potential failure of their service, which is deemed ethical by SE Code of Ethics Tenet 2.06. 
+
+   \subsection{Utilitarianism}
+
+   Utilitarianism argues that when confronted with a decision, one must always choose the path that has the smallest net loss, or greatest net gain.\cite{utilitarianism} In Reddit's decision with the protest, they had to choose between informing their users by blacking out their site or not blacking out at all. Reddit's decision came to down to choosing between a day of no functionality on their site (if they protested), or a potential permanent shutdown of their site if SOPA were to pass (if they didn't protest). Reddit wanted to avoid the latter since the greater net gain would be a free, open, and functioning site. As a result of this decision by utilitarianism, Reddit was justified in blacking out their site in protest of SOPA.
+
+%%%%%%%%%%%%%%%%%%
+%%% Conclusion %%%
+%%%%%%%%%%%%%%%%%%
+
+   \section{Conclusion}
+
+   As shown in SE Code of Ethics Tenets 6.12 and 2.06, and utilitarianism, Reddit was ethical in blacking out their site in protest of SOPA. Reddit would likely fail due to the burden SOPA would place if it were to pass. Fortunately for Reddit and the rest of the internet, the blackout was a success and the bills have been suspended.\cite{senators-change-position} Reddit is now looking ahead at Lamar Smith's new bill, Protecting Children from Internet Pornographers Act of 2011 which is making way through the house right now.\cite{child-porn}
+
+% Public good that one day it might be taken down forever
+
+%According to SOPA, if a search engine links to copyright material, the search engine is responsible for taking down the link to the material and could face penalties if the search engine does not respond promptly.\cite{fake-source} The content of Reddit is composed of hyperlinks to other websites and comments. If SOPA were to be passed, 
+
+% 1.08 Be encouraged to volunteer professional skills to good causes and contribute to public education concerning the discipline.
+% 6.02. Promote public knowledge of software engineering.
+% 6.03. Extend software engineering knowledge by appropriate participation in professional organizations, meetings and publications.
+
+%\subsection{SE Code Tenet 5.12}
+%\emph{SE Code 5.12: Not punish anyone for expressing ethical concerns about a project.}\cite[5.12]{se-code}
+
+%end the two column format
+\end{multicols}
+\newpage
+
+%cite all the references from the bibtex you haven't explicitly cited
+\nocite{*}
+
+\bibliographystyle{lib/IEEEannot}
+
+\bibliography{paper}
+
+\end{document}
